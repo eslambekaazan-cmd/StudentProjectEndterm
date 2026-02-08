@@ -4,7 +4,7 @@ import model.base.SelfCareActivityBase;
 
 public class WellnessActivity extends SelfCareActivityBase {
     private int minutes;
-    private String intensity; // low/medium/high
+    private String intensity; 
 
     public WellnessActivity(int id, String name, Routine routine, int minutes, String intensity) {
         super(id, name, routine);
