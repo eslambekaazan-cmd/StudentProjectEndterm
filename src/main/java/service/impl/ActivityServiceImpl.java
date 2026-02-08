@@ -58,7 +58,7 @@ public class ActivityServiceImpl implements ActivityService {
         if (activity.getId() <= 0) throw new InvalidInputException("id must be > 0");
         activity.validate();
 
-        getById(activity.getId()); // ensure exists
+        getById(activity.getId()); 
         activityRepo.update(activity);
         return getById(activity.getId());
     }
