@@ -48,7 +48,7 @@ public class ActivityServiceImpl implements ActivityService {
     @Override
     public List<SelfCareActivityBase> getAllSortedByScoreDesc() {
         List<SelfCareActivityBase> list = activityRepo.findAll();
-        list.sort((a, b) -> Integer.compare(b.estimateScore(), a.estimateScore())); // lambda
+        list.sort((a, b) -> Integer.compare(b.estimateScore(), a.estimateScore()));
         return list;
     }
 
